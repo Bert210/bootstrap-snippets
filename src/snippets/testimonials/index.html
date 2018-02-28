@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Bootstrap 4 Layout</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col-lg-4"></div>
+                <div>
+                    <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.
+                        Aliquam varius finibus est.</p>
+                </div>
+                <div>
+                    <img class="rounded-circle" src="../../../assets/user-photos/87.jpg">
+                    Manuel Vasquez
+                    CEO of Company Inc.
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div>Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</div>
+                <div>
+                        <img class="rounded-circle" src="../../../assets/user-photos/72.jpg">
+                        Alexis Stewart
+                        Freelance Web Dev
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div>Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent
+                    aliquam in tellus eu.</div>
+                    <div>
+                            <img class="rounded-circle" src="../../../assets/user-photos/99.jpg">
+                            Caleb Campbell
+                            CFO of Star Co.
+                        </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $.ajax({
+            url: 'https://randomuser.me/api/',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+            }
+        });</script>
+</body>
+
+</html>
