@@ -1,5 +1,9 @@
-$bg-color: #eee; 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import 'testimonials';
+
+$bg-color: #eee;
 
 body {
-    background: $bg-color;
+    font-family: Roboto, sans-serif;
 }

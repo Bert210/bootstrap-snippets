@@ -1,2 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.testimonials {
+  background-color: #bdc3c7;
+  padding: 1rem; }
+  .testimonials p {
+    margin: 0; }
+  .testimonials .tes-testimonial {
+    background-color: #fff;
+    padding: 30px; }
+  .testimonials .arrow-down {
+    margin-left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff; }
+  .testimonials .tes-person {
+    display: flex;
+    margin: 0.4rem;
+    align-items: center; }
+    .testimonials .tes-person .tes-avatar {
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-right: 1rem; }
+    .testimonials .tes-person .tes-avatar::after {
+      float: clear; }
+    .testimonials .tes-person .tes-full-name {
+      font-weight: 700;
+      font-size: 20px; }
+    .testimonials .tes-person .tes-company {
+      font-weight: 400;
+      font-size: 16px;
+      font-style: italic; }
+
 body {
-  background: #eee; }
+  font-family: Roboto, sans-serif; }
