@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Forms - Contact Form</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="form-header text-center">
+            <h4 class="font-weight-bold">Contact Us</h4>
+            <p>Have a question, reach out to us.</p>
+        </div>
+        <form id="form-contact-us">
+            <div class="form-group form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Name" id="form-name" required>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="Email" id="form-email"required>
+                </div>
+            </div>
+            <div class="form-group">
+                    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                    <textarea class="form-control" id="form-message" rows="3" placeholder="Message" required></textarea>
+                  </div>
+            <button type="submit" class="btn btn-primary" id="form-contact-us-submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $("#form-contact-us-submit").on('click', function(e){
+            e.preventDefault();
+            console.log({
+                name: $('#form-name').val(),
+                email: $('#form-email').val(),
+                message: $('#form-message').val()
+            })
+        })
+    </script>
+</body>
+
+</html>
