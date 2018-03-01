@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <title>Bootstrap 4 Layout</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
+<head>
+    <title>Bootstrap 4 Layout</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-    <body>
-        <div class="container">
-            <h1 class="display-3">Snippets</h1>
-            <div class="list-group">
-                <a href="snippets/heroes" class="list-group-item list-group-item-action active">
-                  Heroes
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">Navbar</a>
-                <a href="#" class="list-group-item list-group-item-action">Features</a>
-                <a href="#" class="list-group-item list-group-item-action">Forms</a>
-                <a href="snippets/testimonials" class="list-group-item list-group-item-action">Testimonials</a>
-              </div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-3">Snippets</h1>
+        <div class="list-group list-group-root well">
+
+            <a href="#heroes-sub" class="list-group-item list-group-item-action" data-toggle="collapse">
+                <i class="fa fa-chevron-right"></i> Heroes
+            </a>
+
+            <div id="heroes-sub" class="collapse">
+
+                <a href="#" class="list-group-item">Item 1.1.1</a>
+
+            </div>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-chevron-right"></i> Navbar
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-chevron-right"></i> Features
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-chevron-right"></i> Forms
+            </a>
+            <a href="#testimonial-sub" class="list-group-item list-group-item-action" data-toggle="collapse">
+                <i class="fa fa-chevron-right"></i> Testimonials
+            </a>
+
+            <div id="testimonial-sub" class="collapse">
+                <a href="snippets/testimonials" class="list-group-item">Simple Testimonial</a>
+            </div>
+
         </div>
+    </div>
 
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/popper.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-    </body>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('.list-group-item').on('click', function () {
+                $('.fa', this)
+                    .toggleClass('fa-chevron-right')
+                    .toggleClass('fa-chevron-down')
+            })
+        });
+    </script>
+</body>
+
 </html>
