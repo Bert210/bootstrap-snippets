@@ -33,5 +33,12 @@
       font-size: 16px;
       font-style: italic; }
 
+.hero-full-width {
+  background-image: url("../../../assets/imgs/laptop.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 2rem;
+  color: white; }
+
 body {
   font-family: Roboto, sans-serif; }
