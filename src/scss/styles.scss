@@ -10,3 +10,7 @@ $bg-color: #eee;
 body {
     font-family: Roboto, sans-serif;
 }
+
+.bg-invert {
+    background-color: $bg-color;
+}
