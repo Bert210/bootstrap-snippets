@@ -48,7 +48,7 @@
     <!-- .site-navigation -->
 
     <!-- Full Width Hero -->
-    <div class="jumbotron jumbotron-fluid hero-full-width text-center">
+    <div class="jumbotron jumbotron-fluid hero-full-width text-center mb-0">
         <div class="container">
             <h1 class="display-4">Fluid jumbotron</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
@@ -58,9 +58,9 @@
     <!-- End Full Width Hero -->
 
     <!-- Services and Features -->
-    <div class="container-fluid">
+    <div class="container-fluid py-5">
         <div class="container">
-            <div class="row my-5 d-block text-center">
+            <div class="row d-block text-center">
                 <h1 class="display-4">Services</h1>
                 <p class="text-muted">The things we do for you!</p>
             </div>
@@ -95,7 +95,7 @@
     <!-- Our Work / Portfolio -->
     <div class="container-fluid py-5 bg-invert">
         <div class="container ">
-            <div class="row text-center d-block my-5">
+            <div class="row text-center d-block">
 
                 <h1 class="display-4">Our Work</h1>
                 <p class="text-muted">Cras bibendum suscipit ipsum ac convallis. Morbi vitae dictum elit. Donec pulvinar nunc dapibus placerat
@@ -155,9 +155,9 @@
     <!-- End of Our Work / Portfolio -->
 
     <!-- Accolades -->
-    <div class="container-fluid">
+    <div class="container-fluid py-5">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row d-block text-center">
                 <h1 class="display-4">We are an award winning studio.</h1>
                 <p class="text-muted">We bring the power of the web to local businesses</p>
             </div>
@@ -166,7 +166,7 @@
     <!-- End of Accolades -->
 
     <!-- Testimonials -->
-    <div class="container-fluid bg-invert">
+    <div class="container-fluid py-5 bg-invert">
         <div class="container">
             <div class="row d-block text-center">
                 <h1 class="display-4">Testimonials</h1>
@@ -222,6 +222,20 @@
     <!-- End of Brands -->
 
     <!-- Team -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row d-block text-center">
+                <h1 class="display-4">Meet the Team</h1>
+                <p class="text-muted">The team who will build your website.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End of Team -->
 
     <!-- Simple Call To Action -->
@@ -231,26 +245,28 @@
     <!-- End of Google Map -->
 
     <!-- Contact Us Section -->
-    <div class="container">
-        <div class="form-header text-center">
-            <h4 class="display-4">Contact Us</h4>
-            <p class="text-muted">Have a question, reach out to us.</p>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="form-header text-center">
+                <h4 class="display-4">Contact Us</h4>
+                <p class="text-muted">Have a question, reach out to us.</p>
+            </div>
+            <form id="form-contact-us">
+                <div class="form-group form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name" id="form-name" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="Email" id="form-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                    <textarea class="form-control" id="form-message" rows="3" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="form-contact-us-submit">Submit</button>
+            </form>
         </div>
-        <form id="form-contact-us">
-            <div class="form-group form-row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Name" id="form-name" required>
-                </div>
-                <div class="col">
-                    <input type="email" class="form-control" placeholder="Email" id="form-email" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-                <textarea class="form-control" id="form-message" rows="3" placeholder="Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" id="form-contact-us-submit">Submit</button>
-        </form>
     </div>
     <!-- End of Contact Us -->
 
