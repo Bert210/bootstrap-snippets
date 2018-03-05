@@ -41,6 +41,10 @@
   padding: 8rem 2rem;
   color: white; }
 
+.team-member {
+  border: 1px solid #eee;
+  text-align: center; }
+
 body {
   font-family: Roboto, sans-serif; }
 

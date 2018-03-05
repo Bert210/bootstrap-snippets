@@ -10,6 +10,13 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        #map {
+         height: 500px;
+         width: 100%;
+        }
+     </style>
 </head>
 
 <body>
@@ -230,8 +237,77 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-12">
-
+                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                    <div class="py-5 team-member">
+                        <img class="rounded-circle" src="../../assets/user-photos/9.jpg" alt="">
+                        <h5 class="font-weight-bold mt-3">Robin Marshall</h5>
+                        <p class="text-muted my-3">Graphic Designer</p>
+                        <div class="social-media-icons">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                    <div class="py-5 team-member">
+                        <img class="rounded-circle" src="../../assets/user-photos/54.jpg" alt="">
+                        <h5 class="font-weight-bold mt-3">Kelly Allen</h5>
+                        <p class="text-muted my-3">Graphic Designer</p>
+                        <div class="social-media-icons">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                    <div class="py-5 team-member">
+                        <img class="rounded-circle" src="../../assets/user-photos/81.jpg" alt="">
+                        <h5 class="font-weight-bold mt-3">Marc Richards</h5>
+                        <p class="text-muted my-3">Graphic Designer</p>
+                        <div class="social-media-icons">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+                    <div class="py-5 team-member">
+                        <img class="rounded-circle" src="../../assets/user-photos/94.jpg" alt="">
+                        <h5 class="font-weight-bold mt-3">Sherri Lawson</h5>
+                        <p class="text-muted my-3">Graphic Designer</p>
+                        <div class="social-media-icons">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -239,9 +315,11 @@
     <!-- End of Team -->
 
     <!-- Simple Call To Action -->
+
     <!-- End of CTA -->
 
     <!-- Google Map -->
+    <div id="map"></div>
     <!-- End of Google Map -->
 
     <!-- Contact Us Section -->
@@ -343,6 +421,22 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script>
+        function initMap() {
+          var uluru = {lat: 28.550738, lng: -81.376109};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgn9ck53VZSGlYYSAmXIUULrQajOr3I38&callback=initMap">
+      </script>
 </body>
 
 </html>
