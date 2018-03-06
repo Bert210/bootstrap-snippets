@@ -1,0 +1,13 @@
+h1 {
+    /* color: black; */
+}
+
+#hero-text-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+}
+
+.hero-full-width {
+    background-image: url("../../../assets/imgs/pizza.jpg");
+    padding: 8rem 0;
+}
