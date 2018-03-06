@@ -13,16 +13,16 @@
 
     <style>
         #map {
-         height: 500px;
-         width: 100%;
+            height: 500px;
+            width: 100%;
         }
-     </style>
+    </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav-bar">
 
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <div class="container">
 
             <!-- Your site title as branding in the menu -->
@@ -38,12 +38,23 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="navbar-nav  ml-auto mr-0">
-                    <a class="nav-item nav-link active" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-item nav-link active" href="#home">Home</a>
+                    <a class="nav-item nav-link" href="#services">Services</a>
+                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a href="#testimonials" class="dropdown-item">Testimonials</a>
+                            <a href="#team" class="dropdown-item">Team</a>
+                            <a href="#map" class="dropdown-item">Location</a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -55,7 +66,7 @@
     <!-- .site-navigation -->
 
     <!-- Full Width Hero -->
-    <div class="jumbotron jumbotron-fluid hero-full-width text-center mb-0">
+    <div class="jumbotron jumbotron-fluid hero-full-width text-center mb-0" id="home">
         <div class="container">
             <h1 class="display-4">Fluid jumbotron</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
@@ -65,7 +76,7 @@
     <!-- End Full Width Hero -->
 
     <!-- Services and Features -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="services">
         <div class="container">
             <div class="row d-block text-center">
                 <h1 class="display-4">Services</h1>
@@ -74,20 +85,20 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-12 text-center">
+                <div class="col-lg-4 col-md-12 text-center my-3">
                     <i class="fa fa-4x fa-rocket" aria-hidden="true"></i>
                     <h3 class="my-4">Fast and Responive</h3>
                     <p class="text-muted mb-0">Pellentesque commodo, mauris in pellentesque blandit, est nibh ultricies leo, ac volutpat nulla augue
                         id augue. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                         per inceptos himenaeos. </p>
                 </div>
-                <div class="col-lg-4 col-md-12 text-center">
+                <div class="col-lg-4 col-md-12 text-center my-3">
                     <i class="fa fa-4x fa-code" aria-hidden="true"></i>
                     <h3 class="my-4">Web Development</h3>
                     <p class="text-muted mb-0">Donec fermentum, tellus non aliquet congue, dolor sem viverra nisi, et consectetur orci risus et justo.
                         Vestibulum a nisi libero. </p>
                 </div>
-                <div class="col-lg-4 col-md-12 text-center">
+                <div class="col-lg-4 col-md-12 text-center my-3">
                     <i class="fa fa-4x fa-map-pin" aria-hidden="true"></i>
                     <h3 class="my-4">Local SEO</h3>
                     <p class="text-muted mb-0">Aenean scelerisque eget risus at laoreet. Sed semper non odio a aliquam. Aenean et porta diam. Integer
@@ -100,7 +111,7 @@
     <!-- End of services and features -->
 
     <!-- Our Work / Portfolio -->
-    <div class="container-fluid py-5 bg-invert">
+    <div class="container-fluid py-5 bg-invert" id="portfolio">
         <div class="container ">
             <div class="row text-center d-block">
 
@@ -173,7 +184,7 @@
     <!-- End of Accolades -->
 
     <!-- Testimonials -->
-    <div class="container-fluid py-5 bg-invert">
+    <div id="testimonials" class="container-fluid py-5 bg-invert">
         <div class="container">
             <div class="row d-block text-center">
                 <h1 class="display-4">Testimonials</h1>
@@ -229,7 +240,7 @@
     <!-- End of Brands -->
 
     <!-- Team -->
-    <div class="container-fluid py-5">
+    <div id="team" class="container-fluid py-5">
         <div class="container">
             <div class="row d-block text-center">
                 <h1 class="display-4">Meet the Team</h1>
@@ -323,7 +334,7 @@
     <!-- End of Google Map -->
 
     <!-- Contact Us Section -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="contact-us">
         <div class="container">
             <div class="form-header text-center">
                 <h4 class="display-4">Contact Us</h4>
@@ -422,21 +433,42 @@
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-        function initMap() {
-          var uluru = {lat: 28.550738, lng: -81.376109};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgn9ck53VZSGlYYSAmXIUULrQajOr3I38&callback=initMap">
-      </script>
+        $("#nav ul li a[href^='#']").on('click', function (e) {
+
+            // prevent default anchor click behavior
+            e.preventDefault();
+
+            // store hash
+            var hash = this.hash;
+
+            // animate
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 300, function () {
+
+                // when done, add hash to url
+                // (default click behaviour)
+                window.location.hash = hash;
+            });
+
+    </script>
+    <script>
+            function initMap() {
+                var uluru = { lat: 28.550738, lng: -81.376109 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+
+                map.setZoom(12);
+            }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgn9ck53VZSGlYYSAmXIUULrQajOr3I38&callback=initMap">
+    </script>
 </body>
 
 </html>
