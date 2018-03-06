@@ -20,10 +20,10 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target="#nav-bar" data-offset="70">
+<body id="body-data" data-spy="scroll" data-target="#nav-bar" data-offset="70">
 
 
-    <nav id="nav-bar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-md navbar-dark">
         <div class="container">
 
             <!-- Your site title as branding in the menu -->
@@ -78,6 +78,28 @@
         </div>
     </div>
     <!-- End Full Width Hero -->
+
+    <!-- About Us -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row d-block text-center">
+                <h1 class="display-4">About Us</h1>
+                <!-- <p class="text-muted">    <div class="container-fluid py-5">        <div class="container"> -->
+                <div class="row d-block text-center">
+                    <p class="text-muted">At Pizza, we do not just make pizza. We make people's days. Pizza was built on the belief that pizza
+                        night should be special, and we carry that belief into everything we do. What is our purpose at Pizza?
+                        Moments of Excitement. All made possible by our flavor, innovation and, most importantly, by unlocking
+                        potential in our team members. With more than 55 years of experience under our belts, we understand
+                        how to best serve our customers through tried and true service principles. Instead of following trends,
+                        we set them. We create food we're proud to serve and deliver it fast, with a smile.</p>
+                </div>
+            </div>
+        </div>
+        </p>
+    </div>
+    </div>
+    </div>
+    <!-- End of About Us -->
 
     <!-- Services and Features -->
     <div class="container-fluid py-5" id="services">
@@ -437,6 +459,8 @@
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
+        console.log(window);
+
         $("#nav-bar div a[href^='#']").on('click', function (e) {
 
             // prevent default anchor click behavior
@@ -449,16 +473,16 @@
             var offsetAmount = 48;
             var amount = $(hash).offset().top - navOffset;
             // animate  
-            if($(hash).offset()){
+            if ($(hash).offset()) {
                 $('html, body').animate({
-                        scrollTop: amount
+                    scrollTop: amount
                 }, 300, function () {
 
                     // when done, add hash to url
                     // (default click behaviour)
                     // window.location.hash = hash;
                     return window.history.pushState(null, null, hash);
-                    
+
                 });
 
             }
