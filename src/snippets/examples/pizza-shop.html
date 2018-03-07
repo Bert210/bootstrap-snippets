@@ -459,7 +459,16 @@
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-        console.log(window);
+        $(window).scroll(function(e){
+            // console.log(e, e.screenX);
+            
+            if($(window).scrollTop() === 0){
+                $("#nav-bar").removeClass("bg-dark");
+            }else{
+                $("#nav-bar").addClass("bg-dark");
+            }
+
+        });
 
         $("#nav-bar div a[href^='#']").on('click', function (e) {
 
