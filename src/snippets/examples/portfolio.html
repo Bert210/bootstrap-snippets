@@ -10,6 +10,8 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+
 
     <style>
         #map {
@@ -22,13 +24,13 @@
 <body data-spy="scroll" data-target="#nav-bar" data-offset="70">
 
 
-    <nav id="nav-bar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-md navbar-dark">
         <div class="container">
 
             <!-- Your site title as branding in the menu -->
             <!-- logo -->
             <a class="navbar-brand" rel="home" href="#">
-                Bootstrap Snippets
+                Robert Utchel
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -38,23 +40,12 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="navbar-nav  ml-auto mr-0">
-                    <a class="nav-item nav-link active" href="#home">Home</a>
-                    <a class="nav-item nav-link" href="#services">Services</a>
-                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-                    <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
-
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-
-                        <div class="dropdown-menu">
-                            <a href="#testimonials" class="dropdown-item">Testimonials</a>
-                            <a href="#team" class="dropdown-item">Team</a>
-                            <a href="#map" class="dropdown-item">Location</a>
-                        </div>
-
-                    </div>
+                    <a class="nav-item nav-link active smooth-scroll" href="#home">Home</a>
+                    <a class="nav-item nav-link smooth-scroll" href="#services">Services</a>
+                    <a class="nav-item nav-link smooth-scroll" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link smooth-scroll" href="#team">About Me</a>
+                    <a class="nav-item nav-link smooth-scroll" href="#map">Location</a>                    
+                    <a href="#contact-us" class="nav-item nav-link smooth-scroll">Contact Us</a>
                 </div>
             </div>
 
@@ -66,11 +57,16 @@
     <!-- .site-navigation -->
 
     <!-- Full Width Hero -->
-    <div class="jumbotron jumbotron-fluid hero-full-width text-center mb-0" id="home">
-        <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            <a href="#" class="btn btn-lg btn-primary">Call to Action</a>
+    <div class="jumbotron jumbotron-fluid hero-full-width d-flex text-center" id="home">
+        <div class="container hero-container">
+            <div class="row">
+                <div class="col-6 mx-auto p-3 hero-text-background">
+                    <h1 class="display-4">Robert Utchel</h1>
+                    <p class="lead">Web Developer in Orlando, FL.</p>
+                    <a href="#contact-us" class="btn btn-lg btn-primary smooth-scroll">Get in touch!</a>
+
+                </div>
+            </div>
         </div>
     </div>
     <!-- End Full Width Hero -->
@@ -115,7 +111,7 @@
         <div class="container ">
             <div class="row text-center d-block">
 
-                <h1 class="display-4">Our Work</h1>
+                <h1 class="display-4">My Work</h1>
                 <p class="text-muted">Cras bibendum suscipit ipsum ac convallis. Morbi vitae dictum elit. Donec pulvinar nunc dapibus placerat
                     lobortis. Pellentesque fringilla, nunc sodales viverra consequat, sem ligula sollicitudin mi, at porta
                     sem mauris non felis. </p>
@@ -244,14 +240,14 @@
         <div class="container">
             <div class="row d-block text-center">
                 <h1 class="display-4">Meet the Team</h1>
-                <p class="text-muted">The team who will build your website.</p>
+                <p class="text-muted">(aka Me)</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="py-5 team-member">
-                        <img class="rounded-circle" src="../../assets/user-photos/9.jpg" alt="">
-                        <h5 class="font-weight-bold mt-3">Robin Marshall</h5>
+                        <img class="rounded-circle" src="../../assets/user-photos/.jpg" alt="">
+                        <h5 class="font-weight-bold mt-3">Robert Utchel</h5>
                         <p class="text-muted my-3">Graphic Designer</p>
                         <div class="social-media-icons">
                             <a href="#">
@@ -433,7 +429,17 @@
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-        $("#nav-bar div a[href^='#']").on('click', function (e) {
+        $(window).scroll(function(e){
+            if($(window).scrollTop() === 0){
+                $("#nav-bar").removeClass("bg-dark");
+            }else{
+                $("#nav-bar").addClass("bg-dark");
+            }
+        })
+
+        // $("#nav-bar div a[href^='#']").on('click', function (e) {
+
+        $(".smooth-scroll").on('click', function (e) {
 
             // prevent default anchor click behavior
             e.preventDefault();
@@ -445,16 +451,16 @@
             var offsetAmount = 48;
             var amount = $(hash).offset().top - navOffset;
             // animate  
-            if($(hash).offset()){
+            if ($(hash).offset()) {
                 $('html, body').animate({
-                        scrollTop: amount
+                    scrollTop: amount
                 }, 300, function () {
 
                     // when done, add hash to url
                     // (default click behaviour)
                     // window.location.hash = hash;
                     return window.history.pushState(null, null, hash);
-                    
+
                 });
 
             }

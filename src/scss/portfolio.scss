@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+@import 'variables';
+@import 'testimonials';
+@import 'hero';
+@import 'team';
+
+$bg-color: #eee;
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.bg-invert {
+    background-color: $bg-color;
+}
+
+#nav-bar {
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-full-width {
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/imgs/tidy.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    // height: 400px;
+    padding: 70px 0;
+    height: 100vh;
+    // padding: 8rem 2rem;
+    color: white;
+}
+
+.content-wrapper {
+    vertical-align: middle;
+}
+
+.center {
+    margin: auto auto;
+}
+
+.hero-text-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}

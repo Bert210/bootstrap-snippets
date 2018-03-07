@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.testimonials {
+  background-color: #eee;
+  padding: 1rem; }
+  .testimonials p {
+    margin: 0; }
+  .testimonials .tes-testimonial {
+    background-color: #fff;
+    padding: 30px;
+    height: 156px; }
+  .testimonials .arrow-down {
+    margin-left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff; }
+  .testimonials .tes-person {
+    display: flex;
+    margin: 0.4rem;
+    align-items: center; }
+    .testimonials .tes-person .tes-avatar {
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-right: 1rem; }
+    .testimonials .tes-person .tes-avatar::after {
+      float: clear; }
+    .testimonials .tes-person .tes-full-name {
+      font-weight: 700;
+      font-size: 20px; }
+    .testimonials .tes-person .tes-company {
+      font-weight: 400;
+      font-size: 16px;
+      font-style: italic; }
+
+.hero-full-width {
+  background-image: url("../../../assets/imgs/laptop.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 2rem;
+  color: white; }
+
+.team-member {
+  border: 1px solid #eee;
+  text-align: center; }
+
+body {
+  font-family: Roboto, sans-serif; }
+
+.bg-invert {
+  background-color: #eee; }
+
+#nav-bar {
+  transition: all 0.5s ease-in-out; }
+
+.hero-full-width {
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/imgs/tidy.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 70px 0;
+  height: 100vh;
+  color: white; }
+
+.content-wrapper {
+  vertical-align: middle; }
+
+.center {
+  margin: auto auto; }
+
+.hero-text-background {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px; }
