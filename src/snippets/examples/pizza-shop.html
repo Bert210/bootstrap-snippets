@@ -67,13 +67,15 @@
     <!-- .site-navigation -->
 
     <!-- Full Width Hero -->
-    <div class="jumbotron jumbotron-fluid hero-full-width text-center mb-0" id="home">
-        <div id="hero-text-bg" class="container-fluid">
+    <div class="jumbotron jumbotron-fluid d-flex hero-full-width text-center mb-0" id="home">
+        <div id="hero-text-bg" class="container">
+            <div class="row">
 
-            <div class="container">
-                <h1 class="display-4">Anthony's Pizza</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                <a href="#" class="btn btn-lg btn-primary">View the Menu</a>
+                <div class="col-12">
+                    <h1 class="display-4">Anthony's Pizza</h1>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <a href="#" class="btn btn-lg btn-primary">View the Menu</a>
+                </div>
             </div>
         </div>
     </div>
@@ -141,7 +143,7 @@
         <div class="container ">
             <div class="row text-center d-block">
 
-                <h1 class="display-4">Our Work</h1>
+                <h1 class="display-4">Menu</h1>
                 <p class="text-muted">Cras bibendum suscipit ipsum ac convallis. Morbi vitae dictum elit. Donec pulvinar nunc dapibus placerat
                     lobortis. Pellentesque fringilla, nunc sodales viverra consequat, sem ligula sollicitudin mi, at porta
                     sem mauris non felis. </p>
@@ -151,45 +153,9 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/laptop.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Custom Laptops</h5>
-                    <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
-                        ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/office.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Clean Office</h5>
-                    <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
-                        ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/tidy.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Tidy Workplace</h5>
-                    <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
-                        ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/laptop.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Custom Laptops</h5>
-                    <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
-                        ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/laptop.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Custom Laptops</h5>
-                    <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
-                        ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/laptop.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Custom Laptops</h5>
-                    <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
-                        ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                    <img src="../../../assets/imgs/laptop.jpg" class="img-fluid mb-3" alt="">
-                    <h5 class="">Custom Laptops</h5>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <img src="../../../assets/imgs/pizza-zoom.jpeg" class="img-fluid mb-3" alt="">
+                    <h5 class="">Pizzas</h5>
                     <p class="text-muted">Nunc eget placerat lorem. Fusce luctus mollis aliquam. In maximus finibus leo quis egestas. Nullam turpis
                         ipsum, tempor ac odio quis, pellentesque gravida orci.</p>
                 </div>
@@ -459,13 +425,13 @@
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-        $(window).scroll(function(e){
+        $(window).scroll(function (e) {
             // console.log(e, e.screenX);
-             
-            if($(window).scrollTop() === 0){
-                $("#nav-bar").removeClass("bg-dark");
-            }else{
-                $("#nav-bar").addClass("bg-dark");
+
+            if ($(window).scrollTop() === 0) {
+                $("#nav-bar").removeClass("bg-primary");
+            } else {
+                $("#nav-bar").addClass("bg-primary");
             }
 
         });
