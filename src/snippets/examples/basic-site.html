@@ -10,19 +10,12 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
-
-    <style>
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-    </style>
 </head>
 
-<body data-spy="scroll" data-target="#nav-bar" data-offset="70">
+<body>
 
 
-    <nav id="nav-bar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
 
             <!-- Your site title as branding in the menu -->
@@ -38,23 +31,12 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="navbar-nav  ml-auto mr-0">
-                    <a class="nav-item nav-link active" href="#home">Home</a>
-                    <a class="nav-item nav-link" href="#services">Services</a>
-                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-                    <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
-
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-
-                        <div class="dropdown-menu">
-                            <a href="#testimonials" class="dropdown-item">Testimonials</a>
-                            <a href="#team" class="dropdown-item">Team</a>
-                            <a href="#map" class="dropdown-item">Location</a>
-                        </div>
-
-                    </div>
+                    <a class="nav-item nav-link active" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
                 </div>
             </div>
 
@@ -66,7 +48,7 @@
     <!-- .site-navigation -->
 
     <!-- Full Width Hero -->
-    <div class="jumbotron jumbotron-fluid hero-full-width text-center mb-0" id="home">
+    <div class="jumbotron jumbotron-fluid hero-full-width text-center">
         <div class="container">
             <h1 class="display-4">Fluid jumbotron</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
@@ -76,29 +58,29 @@
     <!-- End Full Width Hero -->
 
     <!-- Services and Features -->
-    <div class="container-fluid py-5" id="services">
+    <div class="container-fluid">
         <div class="container">
-            <div class="row d-block text-center">
+            <div class="row my-5 d-block text-center">
                 <h1 class="display-4">Services</h1>
                 <p class="text-muted">The things we do for you!</p>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-12 text-center my-3">
+                <div class="col-lg-4 col-md-12 text-center">
                     <i class="fa fa-4x fa-rocket" aria-hidden="true"></i>
                     <h3 class="my-4">Fast and Responive</h3>
                     <p class="text-muted mb-0">Pellentesque commodo, mauris in pellentesque blandit, est nibh ultricies leo, ac volutpat nulla augue
                         id augue. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                         per inceptos himenaeos. </p>
                 </div>
-                <div class="col-lg-4 col-md-12 text-center my-3">
+                <div class="col-lg-4 col-md-12 text-center">
                     <i class="fa fa-4x fa-code" aria-hidden="true"></i>
                     <h3 class="my-4">Web Development</h3>
                     <p class="text-muted mb-0">Donec fermentum, tellus non aliquet congue, dolor sem viverra nisi, et consectetur orci risus et justo.
                         Vestibulum a nisi libero. </p>
                 </div>
-                <div class="col-lg-4 col-md-12 text-center my-3">
+                <div class="col-lg-4 col-md-12 text-center">
                     <i class="fa fa-4x fa-map-pin" aria-hidden="true"></i>
                     <h3 class="my-4">Local SEO</h3>
                     <p class="text-muted mb-0">Aenean scelerisque eget risus at laoreet. Sed semper non odio a aliquam. Aenean et porta diam. Integer
@@ -111,9 +93,9 @@
     <!-- End of services and features -->
 
     <!-- Our Work / Portfolio -->
-    <div class="container-fluid py-5 bg-invert" id="portfolio">
+    <div class="container-fluid py-5 bg-invert">
         <div class="container ">
-            <div class="row text-center d-block">
+            <div class="row text-center d-block my-5">
 
                 <h1 class="display-4">Our Work</h1>
                 <p class="text-muted">Cras bibendum suscipit ipsum ac convallis. Morbi vitae dictum elit. Donec pulvinar nunc dapibus placerat
@@ -173,9 +155,9 @@
     <!-- End of Our Work / Portfolio -->
 
     <!-- Accolades -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid">
         <div class="container">
-            <div class="row d-block text-center">
+            <div class="row justify-content-center">
                 <h1 class="display-4">We are an award winning studio.</h1>
                 <p class="text-muted">We bring the power of the web to local businesses</p>
             </div>
@@ -184,7 +166,7 @@
     <!-- End of Accolades -->
 
     <!-- Testimonials -->
-    <div id="testimonials" class="container-fluid py-5 bg-invert">
+    <div class="container-fluid bg-invert">
         <div class="container">
             <div class="row d-block text-center">
                 <h1 class="display-4">Testimonials</h1>
@@ -237,125 +219,39 @@
     <!-- End of Testimonials -->
 
     <!-- Brands -->
+    
     <!-- End of Brands -->
 
     <!-- Team -->
-    <div id="team" class="container-fluid py-5">
-        <div class="container">
-            <div class="row d-block text-center">
-                <h1 class="display-4">Meet the Team</h1>
-                <p class="text-muted">The team who will build your website.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
-                    <div class="py-5 team-member">
-                        <img class="rounded-circle" src="../../assets/user-photos/9.jpg" alt="">
-                        <h5 class="font-weight-bold mt-3">Robin Marshall</h5>
-                        <p class="text-muted my-3">Graphic Designer</p>
-                        <div class="social-media-icons">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
-                    <div class="py-5 team-member">
-                        <img class="rounded-circle" src="../../assets/user-photos/54.jpg" alt="">
-                        <h5 class="font-weight-bold mt-3">Kelly Allen</h5>
-                        <p class="text-muted my-3">Graphic Designer</p>
-                        <div class="social-media-icons">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
-                    <div class="py-5 team-member">
-                        <img class="rounded-circle" src="../../assets/user-photos/81.jpg" alt="">
-                        <h5 class="font-weight-bold mt-3">Marc Richards</h5>
-                        <p class="text-muted my-3">Graphic Designer</p>
-                        <div class="social-media-icons">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 my-3">
-                    <div class="py-5 team-member">
-                        <img class="rounded-circle" src="../../assets/user-photos/94.jpg" alt="">
-                        <h5 class="font-weight-bold mt-3">Sherri Lawson</h5>
-                        <p class="text-muted my-3">Graphic Designer</p>
-                        <div class="social-media-icons">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- End of Team -->
 
     <!-- Simple Call To Action -->
-
     <!-- End of CTA -->
 
     <!-- Google Map -->
-    <div id="map"></div>
     <!-- End of Google Map -->
 
     <!-- Contact Us Section -->
-    <div class="container-fluid py-5" id="contact-us">
-        <div class="container">
-            <div class="form-header text-center">
-                <h4 class="display-4">Contact Us</h4>
-                <p class="text-muted">Have a question, reach out to us.</p>
-            </div>
-            <form id="form-contact-us">
-                <div class="form-group form-row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Name" id="form-name" required>
-                    </div>
-                    <div class="col">
-                        <input type="email" class="form-control" placeholder="Email" id="form-email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-                    <textarea class="form-control" id="form-message" rows="3" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" id="form-contact-us-submit">Submit</button>
-            </form>
+    <div class="container">
+        <div class="form-header text-center">
+            <h4 class="display-4">Contact Us</h4>
+            <p class="text-muted">Have a question, reach out to us.</p>
         </div>
+        <form id="form-contact-us">
+            <div class="form-group form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Name" id="form-name" required>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="Email" id="form-email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                <textarea class="form-control" id="form-message" rows="3" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="form-contact-us-submit">Submit</button>
+        </form>
     </div>
     <!-- End of Contact Us -->
 
@@ -432,51 +328,6 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script>
-        $("#nav-bar div a[href^='#']").on('click', function (e) {
-
-            // prevent default anchor click behavior
-            e.preventDefault();
-
-            // store hash
-            var hash = this.hash;
-            var navOffset = $('#nav-bar').height();
-
-            var offsetAmount = 48;
-            var amount = $(hash).offset().top - navOffset;
-            // animate  
-            if($(hash).offset()){
-                $('html, body').animate({
-                        scrollTop: amount
-                }, 300, function () {
-
-                    // when done, add hash to url
-                    // (default click behaviour)
-                    // window.location.hash = hash;
-                    return window.history.pushState(null, null, hash);
-                    
-                });
-
-            }
-        });
-    </script>
-    <script>
-        function initMap() {
-            var uluru = { lat: 28.550738, lng: -81.376109 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-
-            map.setZoom(12);
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgn9ck53VZSGlYYSAmXIUULrQajOr3I38&callback=initMap">
-    </script>
 </body>
 
 </html>
