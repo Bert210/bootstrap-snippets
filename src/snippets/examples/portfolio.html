@@ -299,44 +299,70 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3 icon-hover" data-color="2262af">
-                    <i class="icon-html5-alt fa-4x"></i>
-                    <p class="">HTML5</p>
+                <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
+                    <div class="skills-item" data-color="#e54c21">
+                        <i class="icon-html5-alt fa-4x"></i>
+                        </br>
+                        <span class="">HTML5</span>
+                    </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-css3-alt fa-4x"></i>
-                    <p class="">CSS3</p>
+                    <div class="skills-item" data-color="#2062AE">
+                        <i class="icon-css3-alt fa-4x"></i>
+                        </br>
+                        <span class="">CSS3</span>
+                    </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-javascript-alt fa-4x"></i>
-                    <p class="">JavaScript</p>
+                    <div class="skills-item" data-color="#EDDB4F">
+                        <i class="icon-javascript-alt fa-4x"></i>
+                        </br>
+                        <span class="">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-mongodb fa-4x"></i>
-                    <p class="">Bootstrap</p>
+                    <div class="skills-item" data-color="#563D7C">
+                        <i class="icon-bootstrap fa-4x"></i>
+                        </br>
+                        <span class="">Bootstrap</span>
+                    </div>
+
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-git fa-4x"></i>
-                    <p class="">git</p>
+                    <div class="skills-item" data-color="#F24E28">
+                        <i class="icon-git fa-4x"></i>
+                        </br>
+                        <span class="">git</span>
+                    </div>
+
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-nodejs fa-4x"></i>
-                    <p class="">Nodejs</p>
+                    <div class="skills-item" data-color="#94C13D">
+                        <i class="icon-nodejs fa-4x"></i>
+                        </br>
+                        <span class="">Nodejs</span>
+                    </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-reactjs fa-4x"></i>
-                    <p class="">React</p>
+                    <div class="skills-item" data-color="#0BD0F6">
+                        <i class="icon-reactjs fa-4x"></i>
+                        </br>
+                        <span class="">React</span>
+                    </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3">
-                    <i class="icon-wordpress fa-4x"></i>
-                    <p class="">WordPress</p>
+                    <div class="skills-item" data-color="#2A95BF">
+                        <i class="icon-wordpress fa-4x"></i>
+                        </br>
+                        <span class="">WordPress</span>
+                    </div>
                 </div>
 
             </div>
@@ -461,6 +487,15 @@
         })
 
         // $("#nav-bar div a[href^='#']").on('click', function (e) {
+
+        $(".skills-item").hover(function (e) {
+            var color = $(this).data("color");
+            console.log($(this).data("color"));
+            $(this).css("color", color);
+        },
+            function (e) {
+                $(this).css("color", "black");
+            });
 
         $(".smooth-scroll").on('click', function (e) {
 

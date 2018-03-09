@@ -73,3 +73,6 @@ body {
 
 .icon-hover:hover {
   color: #2262af; }
+
+.skills-item {
+  display: inline-block; }
