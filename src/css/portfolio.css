@@ -70,3 +70,6 @@ body {
 
 .center {
   margin: auto auto; }
+
+.icon-hover:hover {
+  color: #2262af; }
