@@ -51,6 +51,9 @@ body {
 .bg-invert {
   background-color: #eee; }
 
+.bg-dark {
+  background-color: black !important; }
+
 #nav-bar {
   transition: all 0.5s ease-in-out; }
 
@@ -76,3 +79,6 @@ body {
 
 .skills-item {
   display: inline-block; }
+
+.logo-sm {
+  height: 25px; }
