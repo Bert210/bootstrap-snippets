@@ -6,7 +6,20 @@
 @import 'hero';
 @import 'team';
 
+$theme-colors: (
+    "primary": #2ecc71
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
 $bg-color: #eee;
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 body {
     font-family: Roboto, sans-serif;
@@ -17,7 +30,8 @@ body {
 }
 
 .bg-dark {
-    background-color: black !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-bottom: 2px solid #2ecc71;
 }
 
 #nav-bar {
